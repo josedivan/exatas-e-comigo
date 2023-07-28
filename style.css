@@ -18,7 +18,7 @@
   --bg-light: hsl(180, 14%, 97%);
   font-size: 62.5%;
   /* 1rem = 10px */
-  --nav-height: 7.2rem;
+  --nav-height: 10rem;
 }
 
 html {
@@ -119,6 +119,10 @@ section .content p {
   gap: 3.2rem;
 }
 
+.social-links #whats {
+  fill: white;
+}
+
 /* CUSTOM COLORS */
 
 #services .card circle {
@@ -174,6 +178,15 @@ nav button {
 nav .menu,
 nav .close-menu {
   position: fixed;
+}
+
+nav#navigation .wrapper .logo {
+  height: 100%;
+}
+
+nav#navigation .wrapper .logo img {
+  height: 100%;
+  filter: drop-shadow(-1px -1px 0px white) drop-shadow(1px 1px 0px white) drop-shadow(+1px -1px 0px white) drop-shadow(-1px +1px 0px white);
 }
 
 /* MENU EXPANDED */
@@ -267,20 +280,12 @@ body.menu-expanded button path {
 
 #home {
   padding-block: 0;
-  padding-top: calc(4.1rem + var(--nav-height));
+  background-color: var(--brand-light);
+  padding-block: 8rem;
+  padding-top: var(--nav-height);
+
 }
 
-#home::before {
-  content: "";
-  width: 100%;
-  height: calc(76% + var(--nav-height));
-  background-color: var(--brand-light);
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 
 #home .button {
   margin-inline: auto;
@@ -592,13 +597,7 @@ footer .social-links {
 
   /* HOME DESKTOP */
 
-  #home::before {
-    height: calc(96% - var(--nav-height));
-  }
 
-  #home {
-    padding-top: var(--nav-height);
-  }
 
   #home .wrapper {
     grid-template-columns: 60.5rem 1fr;
@@ -622,7 +621,7 @@ footer .social-links {
 
   #home img {
     object-position: 0 1rem;
-    margin-top: 132PX;
+    width: 800px;
   }
 
   #home .stats {
@@ -644,9 +643,6 @@ footer .social-links {
     margin: 0;
   }
 
-  #home img {
-    width: 42rem;
-  }
 
   /* SERVICES DESKTOP */
 
@@ -715,9 +711,5 @@ footer .social-links {
 
   footer p {
     margin-bottom: 0;
-  }
-
-  #whats {
-    fill: white;
   }
 }

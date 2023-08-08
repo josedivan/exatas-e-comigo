@@ -16,6 +16,7 @@
   --brand-light-2: hsl(calc(var(--hue) + 10), 14%, 97%);
   --brand-dark: hsl(var(--hue), 100%, 14%);
   --bg-light: hsl(180, 14%, 97%);
+  --default-margin: 8px;
   font-size: 62.5%;
   /* 1rem = 10px */
   --nav-height: 10rem;
@@ -39,6 +40,21 @@ body {
   background: var(--bg-light);
 }
 
+.margin-bottom {
+  margin-bottom: var(--default-margin)
+}
+
+.margin-top {
+  margin-top: var(--default-margin)
+}
+
+.margin-right {
+  margin-right: var(--default-margin)
+}
+
+.margin-left {
+  margin-left: var(--default-margin)
+}
 
 .wrapper {
   width: min(50rem, 100%);
@@ -363,13 +379,11 @@ body.menu-expanded button path {
   margin-bottom: 6rem;
 }
 
-#hoWworks .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 2.2rem;
-}
+
 
 #hoWworks .card {
+  display: flex;
+  flex-flow: column;
   padding: 2.4rem;
   text-align: left;
   background: white;
@@ -377,19 +391,39 @@ body.menu-expanded button path {
   border-radius: 0.6rem;
 }
 
-#hoWworks .card h3 {
-  margin-block: 1.6rem;
+#hoWworks .card .card-title {
+  display: flex;
+  align-items: center;
 }
 
-section#hoWworks .cards {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+#hoWworks .card>* {
+  margin-bottom: 8px;
 }
+
+#hoWworks .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#hoWworks .cards .card {
+  margin-bottom: 2rem;
+  min-height: 200px;
+  min-width: 100%;
+}
+
+#hoWworks .cards .card div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
 
 .enviar {
   width: 48px;
   height: 48px;
-  margin: 120px;
+  margin: 1rem;
   filter: grayscale(0%) hue-rotate(300deg) invert(0%) opacity(85%) saturate(50%) sepia(0%)
 }
 
@@ -413,6 +447,8 @@ section#hoWworks .cards {
 
 #contact {
   text-align: left;
+  background: var(--brand-light);
+
 }
 
 #contact header {
@@ -700,6 +736,44 @@ footer .logo img {
     margin: 0;
   }
 
+  #hoWworks .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+  }
+
+  #hoWworks .card {
+    display: flex;
+    flex-flow: column;
+    padding: 2.4rem;
+    text-align: left;
+    background: white;
+    border: 1px solid var(--brand-light);
+    border-radius: 0.6rem;
+  }
+
+  #hoWworks .card .card-title {
+    display: flex;
+    align-items: center;
+  }
+
+  #hoWworks .card>* {
+    margin-bottom: 8px;
+  }
+
+  #hoWworks .cards {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #hoWworks .cards .card div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem;
+  }
 
   /* SERVICES DESKTOP */
 

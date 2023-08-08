@@ -343,6 +343,7 @@ body.menu-expanded button path {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
+  box-sizing: border-box;
 }
 
 #services .card {
@@ -355,6 +356,41 @@ body.menu-expanded button path {
 
 #services .card h3 {
   margin-block: 1.6rem;
+}
+
+/* hoWworks */
+#hoWworks header h2 {
+  margin-bottom: 6rem;
+}
+
+#hoWworks .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+#hoWworks .card {
+  padding: 2.4rem;
+  text-align: left;
+  background: white;
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+}
+
+#hoWworks .card h3 {
+  margin-block: 1.6rem;
+}
+
+section#hoWworks .cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.enviar {
+  width: 48px;
+  height: 48px;
+  margin: 120px;
+  filter: grayscale(0%) hue-rotate(300deg) invert(0%) opacity(85%) saturate(50%) sepia(0%)
 }
 
 /* ABOUT */
@@ -400,7 +436,7 @@ body.menu-expanded button path {
 
 footer {
   background: var(--primary-color);
-  padding-block: 6rem;
+  padding-block: 4rem;
   text-align: left;
   color: white;
 }
@@ -422,11 +458,28 @@ footer .logo path {
 footer p {
   color: var(--brand-beige);
   line-height: 2;
-  margin-bottom: 3.2rem;
+  /* margin-bottom: 3.2rem; */
 }
 
 footer .social-links {
   justify-content: flex-start;
+}
+
+footer .col-a {
+  display: flex;
+  align-items: center
+}
+
+footer .logo {
+  margin-bottom: unset;
+  margin-right: 16px;
+}
+
+footer .logo img {
+  height: 100%;
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(-1px -1px 0px white) drop-shadow(1px 1px 0px white) drop-shadow(+1px -1px 0px white) drop-shadow(-1px +1px 0px white);
 }
 
 /* BACK TO TOP */
@@ -615,6 +668,10 @@ footer .social-links {
     font-size: 5.2rem;
   }
 
+  #home .col-a {
+    margin-bottom: 2rem;
+  }
+
   #home .content p {
     font-size: 1.8rem;
   }
@@ -692,7 +749,7 @@ footer .social-links {
   /* FOOTER DESKTOP */
 
   footer {
-    padding-block: 8rem;
+    padding-block: 4rem;
   }
 
   footer .wrapper {

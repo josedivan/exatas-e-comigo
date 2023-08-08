@@ -9,6 +9,7 @@ function onScroll() {
   activateMenuAtCurrentSection(services)
   activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
+  activateMenuAtCurrentSection(hoWworks)
 }
 
 function activateMenuAtCurrentSection(section) {
@@ -70,6 +71,7 @@ ScrollReveal({
   duration: 700
 }).reveal(`
   #home, 
+  #hoWworks,
   #home img, 
   #home .stats, 
   #services,

@@ -814,7 +814,7 @@ footer .logo img {
 
   #contact .wrapper {
     grid-template-columns: 1fr 57.5rem;
-    grid-template-areas: "A B
+    grid-template-areas: "A B"
 
   }
 

@@ -153,6 +153,7 @@ section .content p {
 button.open-menu path[stroke*="#00856F"],
 #contact li path {
   stroke: var(--primary-color);
+  text-decoration: none;
 }
 
 body.menu-expanded #navigation .logo path,
@@ -813,7 +814,8 @@ footer .logo img {
 
   #contact .wrapper {
     grid-template-columns: 1fr 57.5rem;
-    grid-template-areas: "A B";
+    grid-template-areas: "A B"
+
   }
 
   #contact h2 {

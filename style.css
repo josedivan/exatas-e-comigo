@@ -293,7 +293,6 @@ body.menu-expanded button path {
 }
 
 /* HOME */
-
 #home {
   padding-block: 0;
   background-color: var(--brand-light);
@@ -301,7 +300,6 @@ body.menu-expanded button path {
   padding-top: var(--nav-height);
 
 }
-
 
 #home .button {
   margin-inline: auto;
@@ -350,7 +348,6 @@ body.menu-expanded button path {
 }
 
 /* SERVICES */
-
 #services header h2 {
   margin-bottom: 6rem;
 }
@@ -366,7 +363,7 @@ body.menu-expanded button path {
   padding: 2.4rem;
   text-align: left;
   background: white;
-  border: 1px solid var(--brand-light);
+  border: 2px solid var(--brand-light);
   border-radius: 0.6rem;
 }
 
@@ -379,16 +376,17 @@ body.menu-expanded button path {
   margin-bottom: 6rem;
 }
 
-
-
 #hoWworks .card {
   display: flex;
   flex-flow: column;
   padding: 2.4rem;
   text-align: left;
   background: white;
-  border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
+  margin-bottom: 2rem;
+  min-height: 200px;
+  min-width: 100%;
+  border: 2px solid var(--brand-light);
 }
 
 #hoWworks .card .card-title {
@@ -405,11 +403,7 @@ body.menu-expanded button path {
   flex-wrap: wrap;
 }
 
-#hoWworks .cards .card {
-  margin-bottom: 2rem;
-  min-height: 200px;
-  min-width: 100%;
-}
+
 
 #hoWworks .cards .card div {
   flex-grow: 1;
@@ -748,7 +742,6 @@ footer .logo img {
     padding: 2.4rem;
     text-align: left;
     background: white;
-    border: 1px solid var(--brand-light);
     border-radius: 0.6rem;
   }
 
